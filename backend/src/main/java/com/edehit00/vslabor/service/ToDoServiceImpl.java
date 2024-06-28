@@ -35,7 +35,7 @@ public class ToDoServiceImpl implements ToDoService {
     @Override
     public ResponseEntity<String> updateToDo(int id, ToDo newToDo) {
         return toDoRepository.findById(id).map(todo ->{
-            todo.setToDo(newToDo.getToDo());
+            todo.setTodo(newToDo.getTodo());
             todo.setDescription(newToDo.getDescription());
             toDoRepository.save(todo);
             return new ResponseEntity<>("ToDo updated", HttpStatus.OK);
