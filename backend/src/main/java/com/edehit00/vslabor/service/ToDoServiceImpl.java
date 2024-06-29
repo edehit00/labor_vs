@@ -41,6 +41,4 @@ public class ToDoServiceImpl implements ToDoService {
             return new ResponseEntity<>("ToDo updated", HttpStatus.OK);
         }).orElse(new ResponseEntity<>("No ToDo with this id", HttpStatus.BAD_REQUEST));
     }
-
-
 }

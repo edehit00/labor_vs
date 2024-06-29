@@ -8,6 +8,10 @@ docker-compose -f .\docker-compose.yml up
 
 to startup the container
 
+
+swagger documentation at http://localhost:8080/swagger-ui.html or
+http://localhost:8080/swagger-ui/index.html
+
 ## Available Scripts
 
 In the project directory, you can run:
