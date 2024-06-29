@@ -1,6 +1,5 @@
 import React from "react";
 import "./Data.css";
-import { useEffect, useState } from "react";
 import { handleAddToDo } from "../services/toDoHandler";
 
 function Data() {

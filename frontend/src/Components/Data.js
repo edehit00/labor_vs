@@ -1,6 +1,7 @@
 import React from "react";
 import "./Data.css";
 import { useEffect, useState } from "react";
+import DeleteToDo from "./DeleteToDo";
 
 function Data() {
   const [data, setData] = useState([]);
@@ -14,7 +15,7 @@ function Data() {
       })
       .then((jsonRes) => setData(jsonRes));
   }, []);
-  
+
   return (
     <div>
       {typeof data === "undefined" ? ( //wiedergeben vom fetch
@@ -26,6 +27,7 @@ function Data() {
             <div key={e.id} className="data">
               <p>{e.todo} :</p>
               <p>{e.description}</p>
+              <DeleteToDo id={e.id}></DeleteToDo>
             </div>
           ))}
         </div>

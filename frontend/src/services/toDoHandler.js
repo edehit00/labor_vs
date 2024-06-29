@@ -12,3 +12,15 @@ export function handleAddToDo(todo, description) {
         }),
     });
 }
+
+export function handleDeleteToDo(id) {
+    fetch(`http://localhost:8080/api/todo/delete/${id}`, {
+        method: "DELETE",
+        mode: "cors",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+        },
+    });
+}
+
