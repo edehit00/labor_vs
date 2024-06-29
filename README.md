@@ -16,6 +16,12 @@ docker-compose -f .\docker-compose.yml up       // again
 swagger documentation at http://localhost:8080/swagger-ui.html or
 http://localhost:8080/swagger-ui/index.html
 
+## frontend
+
+cd .\frontend\
+npm install
+npm start
+
 ## Available Scripts
 
 In the project directory, you can run:
