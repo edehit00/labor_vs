@@ -4,14 +4,12 @@ import { useEffect, useState } from "react";
 import { handleAddToDo } from "../services/toDoHandler";
 
 function Data() {
-//   const [id, setId] = useState();
-//   const [data, setData] = useState([]);
   let todo = "";
   let description = "";
 
   return (
     <div className="content">
-      <form>
+      <form action="/">
         {" "}
         Add New ToDo
         <div className="container">

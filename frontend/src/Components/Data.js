@@ -3,7 +3,6 @@ import "./Data.css";
 import { useEffect, useState } from "react";
 
 function Data() {
-  // const [id, setId] = useState();
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -15,6 +14,7 @@ function Data() {
       })
       .then((jsonRes) => setData(jsonRes));
   }, []);
+  
   return (
     <div>
       {typeof data === "undefined" ? ( //wiedergeben vom fetch
