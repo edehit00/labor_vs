@@ -8,6 +8,10 @@ docker-compose -f .\docker-compose.yml up
 
 to startup the container
 
+after changes in backend:
+mvn package -DskipTests                         // for a new .jar
+docker image build -t backend .                 // to build a new docker image then
+docker-compose -f .\docker-compose.yml up       // again
 
 swagger documentation at http://localhost:8080/swagger-ui.html or
 http://localhost:8080/swagger-ui/index.html
