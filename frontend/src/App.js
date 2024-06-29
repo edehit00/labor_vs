@@ -1,7 +1,7 @@
 import "./App.css";
-
-import Data from "./Components/Data";
-import Cubes from "./Components/Cubes";
+import Form from "./components/Form";
+import Data from "./components/Data";
+import Cubes from "./components/Cubes";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <div className="App-header">
         <h1>VS Labor</h1>
         <h2>ToDo List</h2>
+        <Form />
         <Data />
       </div>
       <Cubes />
