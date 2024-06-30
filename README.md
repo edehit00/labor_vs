@@ -7,7 +7,8 @@ docker image build -t backend .                 // to build a new docker image f
 cd .\frontend\
 docker build -t frontend .                      // to build a frontend docker image. can be skipped by running the commands below 
                                                 // in ## frontend
-cd..                                            // but i liked the concept of starting the whole project with a single command after the setup
+cd..                                            // but i liked the concept of starting the whole project with a single command 
+                                                // after the setup
 docker-compose -f .\docker-compose.yml up       // to start all container (postgres, backend, frontend) 
                                                 // backend might take a while it needs the db to start properly
 
