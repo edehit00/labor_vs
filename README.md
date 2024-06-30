@@ -1,6 +1,14 @@
 # labor_vs
 Labor for distributed systems
 
+## update 
+First open a Docker Desktop App on Windows and use the following command to start up the project:
+.\run.sh
+
+to stop the docker container:
+.\stop.sh
+
+## deprecated
 First open a Docker Desktop App on Windows and build the docker images needed for this project with following commands in root directory:
 
 docker image build -t backend .                 // to build a new docker image for the backend then
