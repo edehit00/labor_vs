@@ -44,7 +44,6 @@ function Form() {
             onClick={() => {
               if (todo !== "") {
                 handleAddToDo(todo, description);
-                this.forceUpdate();
               }
             }}
           />

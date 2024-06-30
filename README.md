@@ -1,16 +1,21 @@
 # labor_vs
 Labor for distributed systems
 
-First open a Docker Desktop App on Windows 
-then enter following command:
+First open a Docker Desktop App on Windows and build the docker images needed for this project with following commands in root directory:
 
-docker-compose -f .\docker-compose.yml up 
+docker image build -t backend .                 // to build a new docker image for the backend then
+cd .\frontend\
+docker build -t frontend .                      // to build a frontend docker image. can be skipped by running the commands below in ## frontend
+cd..                                            // but i liked the concept of starting the whole project with a single command after the setup
+docker-compose -f .\docker-compose.yml up       // to start all container (postgres, backend, frontend) 
+                                                // backend might take a while it needs the db to start properly
 
-to startup the container
 
-if changes in backend execute following commands in backend directory:
+## if changes are done in backend execute following commands:
 
-mvn package -DskipTests                         // for a new .jar
+cd .\backend\
+mvn package -DskipTests                         // for a new .jar (-DskipTests is important the backend is designed to only run in a docker environment 
+                                                // -> the test will fail and no jar will be created)
 docker image build -t backend .                 // to build a new docker image then
 docker-compose -f .\docker-compose.yml up       // again
 
@@ -23,14 +28,12 @@ cd .\frontend\
 npm install
 npm start
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## postman
+
+A postman collection for all api endpoints is provided in the root directory, if you want to test something in postman
+
+## problems
+
+It's possible for the frontend to not show the ToDos if the addToDo button is pressed to fast, but simply refreshing with f5 fixes the the problem.

@@ -21,7 +21,6 @@ function DeleteToDo(id) {
         value="delete"
         onClick={() => {
           setIdToDo(handleDeleteToDo(idToDo));
-          this.forceUpdate();
         }}
       />
     </form>
