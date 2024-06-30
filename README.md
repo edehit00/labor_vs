@@ -16,8 +16,8 @@ docker-compose -f .\docker-compose.yml up       // to start all container (postg
 ## if changes are done in backend execute following commands:
 
 cd .\backend\
-mvn package -DskipTests                         // for a new .jar (-DskipTests is important the backend is designed to only run in a docker environment 
-                                                // -> the test will fail and no jar will be created)
+mvn package -DskipTests                         // for a new .jar (-DskipTests is important the backend is designed to only run 
+                                                // in a docker environment -> the test will fail and no jar will be created)
 docker image build -t backend .                 // to build a new docker image then
 docker-compose -f .\docker-compose.yml up       // again
 
