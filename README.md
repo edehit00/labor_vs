@@ -5,6 +5,10 @@ Labor for distributed systems
 First open a Docker Desktop App on Windows and use the following command to start up the project:
 .\run.sh
 
+or 
+.\runwithoutmvn.sh
+if mvn isn't installed (a jar is already provided)
+
 to stop the docker container:
 .\stop.sh
 
