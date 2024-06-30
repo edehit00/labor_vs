@@ -3,6 +3,14 @@
     display: grid
 }
 
-label {
-    padding: 1em;
+.form-container{
+    text-align: end;
+}
+
+.form-header {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
 }

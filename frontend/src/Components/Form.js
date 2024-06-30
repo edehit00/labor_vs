@@ -1,40 +1,51 @@
 import React from "react";
-import "./Data.css";
+import "./Form.css";
 import { handleAddToDo } from "../services/toDoHandler";
+import { useRef, useEffect } from "react";
 
-function Data() {
+function Form() {
   let todo = "";
   let description = "";
 
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   return (
     <div className="content">
-      <form action="/">
-        {" "}
-        Add New ToDo
-        <div className="container">
-          <label>
-            ToDo-Name
-            <input
-              type="text"
-              defaultValue={todo}
-              onChange={(e) => (todo = e.target.value)}
-            />
-          </label>
-          <br />
-          <label>
-            ToDo-Description
-            <input
-              type="text"
-              defaultValue={description}
-              onChange={(e) => (description = e.target.value)}
-            />
-          </label>
-          <br />
+      <form className="form-container" action="">
+        <div className="form-header">Add New ToDo</div>
+        <label className="form-child">
+          ToDo-Name
+          <input
+            ref={inputRef}
+            type="text"
+            defaultValue={todo}
+            required
+            onChange={(e) => (todo = e.target.value)}
+          />
+        </label>
+        <br />
+        <label className="form-child">
+          ToDo-Description
+          <input
+            type="text"
+            defaultValue={description}
+            onChange={(e) => (description = e.target.value)}
+          />
+        </label>
+        <br />
+        <div className="center">
           <input
             type="submit"
             value="Submit"
             onClick={() => {
-              handleAddToDo(todo, description);
+              if (todo !== "") {
+                handleAddToDo(todo, description);
+                this.forceUpdate();
+              }
             }}
           />
         </div>
@@ -43,4 +54,4 @@ function Data() {
   );
 }
 
-export default Data;
+export default Form;

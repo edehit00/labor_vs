@@ -22,5 +22,6 @@ export function handleDeleteToDo(id) {
             "Content-Type": "application/json",
         },
     });
+    return 0;
 }
 

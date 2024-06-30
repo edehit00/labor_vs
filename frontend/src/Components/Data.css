@@ -15,3 +15,7 @@ p {
   border: 1em;
   border-color: rgb(225, 228, 231);
 }
+
+.no-data {
+  margin-top: 1em;
+}

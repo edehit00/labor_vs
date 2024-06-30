@@ -22,7 +22,7 @@ function Data() {
         <p className="mobileText ">Loading...</p>
       ) : (
         <div className="data-container">
-          All ToDo with Description{" "}
+          All ToDo with Description:
           {data.map((e) => (
             <div key={e.id} className="data">
               <p>{e.todo} :</p>

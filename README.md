@@ -8,7 +8,8 @@ docker-compose -f .\docker-compose.yml up
 
 to startup the container
 
-after changes in backend:
+if changes in backend execute following commands in backend directory:
+
 mvn package -DskipTests                         // for a new .jar
 docker image build -t backend .                 // to build a new docker image then
 docker-compose -f .\docker-compose.yml up       // again
