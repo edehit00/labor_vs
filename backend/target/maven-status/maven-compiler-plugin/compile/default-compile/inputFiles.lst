@@ -1,7 +1,7 @@
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\controller\ToDoController.java
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\model\ToDo.java
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\repository\ToDoRepository.java
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\service\ToDoServiceImpl.java
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\VsLaborApplication.java
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\service\ToDoService.java
-Z:\Studium 2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\exception\ToDoNotFoundException.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\exception\ToDoNotFoundException.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\model\ToDo.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\service\ToDoService.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\repository\ToDoRepository.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\VsLaborApplication.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\controller\ToDoController.java
+Z:\Studium2\SWA\vs-labor\vs-labor\backend\src\main\java\com\edehit00\vslabor\service\ToDoServiceImpl.java
